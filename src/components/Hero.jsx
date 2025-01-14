@@ -79,18 +79,18 @@ if(hasClicked){
 
 useGSAP(()=>{
 gsap.set('#video-frame',{
-  clipPath: 'polygon(0 0, 0% 20%, 0 46%, 0% 80%, 0 100%, 50% 100%, 100% 100%, 100% 80%, 100% 49%, 100% 20%, 100% 0, 50% 0)'
+  clipPath: 'polygon(14% 0%, 72% 0%, 90% 90%, 0% 100%)'
 })
 
-gsap.to('#video-frame',{
-clipPath:'polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)',
+gsap.from('#video-frame',{
+clipPath:'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
 ease:'power1.inOut',
 scrollTrigger:{
   trigger:'#video-frame',
-  start:'top -10%',
-  end:'top -10%',
+  start:'center center',
+  end:'bottom center',
   markers:true,
-  scrub:1.5
+  scrub:1
 }
 })
 },)
