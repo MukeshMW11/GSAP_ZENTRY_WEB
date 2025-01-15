@@ -14,7 +14,7 @@ end:'+=800 center',
 scrub:1,
 pin:true,
 pinSpacing:true,
-markers:true
+// markers:true
     }
   })
 
@@ -44,7 +44,7 @@ borderRadius:0
 <p>Zentry is the  unified play layer that bridges players, agentic AI and blockcchains, creating a new economic paradigm. </p>
 </div>
       </div>
-<div className="h-vdh w-screen" id='clip'>
+<div className=" min-h-dvh w-screen" id='clip'>
   <div className="mask-clip-path  about-image">
 <img src="img/about.webp" alt="Background" className='absolute left-0 top-0 size-full object-cover ' />
   </div>
