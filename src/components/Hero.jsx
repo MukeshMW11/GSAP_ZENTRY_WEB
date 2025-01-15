@@ -89,7 +89,7 @@ scrollTrigger:{
   trigger:'#video-frame',
   start:'center center',
   end:'bottom center',
-  markers:true,
+  // markers:true,
   scrub:1
 }
 })
