@@ -69,7 +69,7 @@ body {
   }
 
   .hero-heading {
-    @apply uppercase font-zentry font-black text-3xl sm:right-10 sm:text-7xl md:text-7xl lg:text-[12rem] mt-32 ;
+    @apply uppercase font-zentry font-black text-3xl sm:right-10 sm:text-3xl md:text-5xl lg:text-[6rem] mt-32 ;
   }
 
   .about-subtext {
