@@ -166,7 +166,7 @@ body {
   }
   100% {
     height: 4px;
-    transform: translateY(50px);
+    transform: translateY(0px);
   }
 }
 
