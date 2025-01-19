@@ -13,10 +13,10 @@ const Navbar = () => {
   const [isNavVisible,setIsNavVisible] = useState(true)
 
   const  {y:currentScrollY}  = useWindowScroll()
-  console.log("This is current scroll y",currentScrollY)
+  // console.log("This is current scroll y",currentScrollY)
 
 useEffect(()=>{
-  console.log("This is last scroll y",lastScrollY)
+  // console.log("This is last scroll y",lastScrollY)
 if(currentScrollY === 0)
 {
   setIsNavVisible(true);
