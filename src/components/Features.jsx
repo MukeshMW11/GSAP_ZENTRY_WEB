@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import BentoCard from './BentoCard'
 import { TiLocationArrow, TiLocationArrowOutline } from 'react-icons/ti'
 import BentoTilt from './BentoTilt'
 
 const Features = () => {
+
+
+
   return (
     <section className='bg-black pb-52'>
       <div className="container mx-auto px-10 md:px-6">
@@ -55,7 +58,7 @@ The agent of agents elevating agentic AI experience to be more fun and productiv
       </div>
     </BentoTilt>
     <BentoTilt className="bento-tilt_2">
-<video src="videos/feature-5.mp4" loop muted autoPlay className='size-full object-cover object-center '></video>
+<video src="videos/feature-5.mp4" loop muted  className='size-full object-cover object-center '></video>
     </BentoTilt>
 
 <div className="">

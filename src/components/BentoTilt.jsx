@@ -1,14 +1,28 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const BentoTilt = ({children,className=''}) => {
   const [transformStyle,setTransformStyle] = useState('')
   const itemRef = useRef()
+  const videoRef = useRef()
 
+
+  useEffect(()=>{
+    if(itemRef.current){
+      const videoElement = itemRef.current.querySelector('video');
+      if(videoElement){
+        videoRef.current = videoElement
+      }
+    }
+  },[children])
 
 
 
   const HandleMouseMove=(e)=>{
-    if(!itemRef.current) return;
+     if(!itemRef.current) return;
+   if(videoRef.current){
+    videoRef.current.play();
+   }
+
 
     const {left,top,width,height} = 
     itemRef.current.getBoundingClientRect();
@@ -22,11 +36,13 @@ const tiltY = (relativeX-0.5) * 20;
 const newTransfrom = `perspective(700px)  rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(0.95,0.95,0.95)`
 // console.log(relativeX,relativeY)
 
-    setTransformStyle(newTransfrom)
+    setTransformStyle(newTransfrom);
+
   }
 
   const HandleMouseLeave=(e)=>{
-setTransformStyle('')
+setTransformStyle('');
+videoRef.current.pause();
   }
 
   return (
