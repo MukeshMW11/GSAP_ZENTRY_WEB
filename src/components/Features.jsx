@@ -58,12 +58,9 @@ The agent of agents elevating agentic AI experience to be more fun and productiv
       </div>
     </BentoTilt>
     <BentoTilt className="bento-tilt_2">
-<video src="videos/feature-5.mp4" loop muted  className='size-full object-cover object-center '></video>
+<video src="videos/feature-5.mp4" loop muted  className='size-full object-cover object-center cursor-pointer'></video>
     </BentoTilt>
 
-<div className="">
-  
-</div>
 
 </div>
 
