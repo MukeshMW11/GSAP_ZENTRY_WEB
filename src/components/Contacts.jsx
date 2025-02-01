@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 
 const ImageClipBox = ({src,clipClass}) =>(
@@ -29,11 +30,15 @@ const Contacts = () => {
 <ImageClipBox src='img/swordman-partial.webp' clipClass='absolute md:scale-125 '/>
 <ImageClipBox src='img/swordman.webp' clipClass='sword-man-clip-path md:scale-125 '/>
 </div>
-<div className="flex flex-col items-center text-center">
+<div className="flex flex-col items-center text-center ">
 
         
-        <p className='font-general text-[10px] uppercase'>Join Zentry</p>
-        <p className='special-font mt-10 w-full font-zentry leading-[0.9]  md:text-[6rem]' >Let's b<b>u</b>ild the <br/> new era of <br/> ga<b>m</b>ing t<b>o</b>gether</p>
+        <p className='font-general text-[10px] uppercase mix-blend-difference'>Join Zentry</p>
+        <p className='special-font mt-10 w-full font-zentry leading-[0.9] 
+        text-[2rem] md:text-[6rem] mix-blend-difference' >Let's b<b>u</b>ild the <br/> new era of <br/> ga<b>m</b>ing <br/>t<b>o</b>gether</p>
+
+
+        <Button title='contact us' containerClass='mt-10 cursor-pointer bg-yellow-200 hover:bg-yellow-400'/>
         </div>
 </div>
       

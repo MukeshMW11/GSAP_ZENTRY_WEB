@@ -74,7 +74,7 @@ Where realms converge, lies Zentry and the boundless pillar. Discover its secret
     </div>
     
     </section>
-  )
+  ) 
 }
 
 export default Story
